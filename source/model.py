@@ -30,3 +30,4 @@ class SimpleNet(nn.Module):
         out = F.relu(self.fc1(x)) # activation on hidden layer
         out = self.drop(out)
         out = self.fc2(out)
+        return self.sig(out)
